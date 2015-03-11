@@ -1,5 +1,12 @@
 p{ color:red;
 }
 body{
-  background-image:http://www.hopare.com/wp-content/uploads/2014/09/IMG_1332_Fotor.jpg;
+ 
+        background:url(Desert.jpg) no-repeat center center fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        margin: 0;
+        padding: 0;
 }
