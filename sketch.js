@@ -1,5 +1,4 @@
 
-
 var no_of_points;
 var counter = 0;
 //let mySound;
@@ -17,7 +16,6 @@ function windowResized() {
   let s2 = 'I am C++ Developer, Working for Car Infotainment Systems at RBEI';
   fill(1000);
   text(s2, 10, 70, 7000, 1000);
-  
   let s3 = 'I am just getting started here!. I look forward to some amazing collaberations ';
   fill(1000);
   text(s3, 10, 90, 7000, 1000);
@@ -30,13 +28,11 @@ function windowResized() {
 function preload() {
   soundFormats('mp3');
   song = loadSound('maxkomusic-nature');
-
 }
 
 
 function setup() {
-  //soundFormats('mp3', 'ogg');
-  //mySound = loadSound('sb_sanctum');
+
   createCanvas(windowWidth, windowHeight);
   let cnv = createCanvas(windowWidth, windowHeight);
   cnv.mousePressed(canvasPressed);
@@ -52,7 +48,6 @@ function setup() {
   let s2 = 'I am C++ Developer, Working for Car Infotainment Systems at RBEI';
   fill(1000);
   text(s2, 10, 70, 7000, 1000);
-  
   let s3 = 'I am just getting started here!. I look forward to some amazing collaberations ';
   fill(1000);
   text(s3, 10, 90, 7000, 1000);
@@ -60,14 +55,10 @@ function setup() {
   fill(1000);
   text(s4, 10, 110, 7000, 1000);
   link = createA('https://github.com/sandeshdevadiga', 'Check my projects here');
-  //link.fill(1000);
+  //link want to set color and change text size, Can I do it?
   link.position(10, 130, 7000, 1000);
   link1 = createA('https://www.linkedin.com/in/sandeshdevadiga/', 'Connect');
   link1.position(10, 150, 7000, 1000);
-  //mySound = loadSound('../Soundfiles/sb_sanctum.mp3');
-  //
-  //mySound.play();
-  // translucent stroke using alpha value
   frameRate(4);
   stroke(0, 0, 0, 1005);
 }
@@ -85,7 +76,6 @@ function canvasPressed() {
 
 function draw() {
   // draw two random chords each frame
-
   //delayTime(0.11);
   randomChord();
   randomChord();
@@ -95,9 +85,6 @@ function draw() {
 
 
 function randomChord() {
-  // find a random point on a circle
-  //let angle1 = random(0, 2 * PI);
-
 
   let xpos1 = (windowWidth) / 4 * 3 - windowHeight*2 / 4 + (windowHeight)*2 / 4 * cos(no_of_points);
   let ypos1 = (windowHeight) / 2 + (windowHeight) *2/ 4 * sin(no_of_points);
@@ -115,25 +102,6 @@ function randomChord() {
   line(xpos1, ypos1, xpos2, ypos2);
   no_of_points = no_of_points * 2;
   counter++;
-  //mySound.play();
+  //Want to autoplay sound !, How can I do it?
 }
 
-
-// let mySound;
-// function preload() {
-//   soundFormats('mp3', 'ogg');
-//   mySound = loadSound('sb_sanctum.mp3');
-// }
-
-// function setup() {
-//   let cnv = createCanvas(100, 100);
-//   cnv.mousePressed(canvasPressed);
-//   background(220);
-//   text('tap here to play', 10, 20);
-// }
-
-// function canvasPressed() {
-//   // playing a sound file on a user gesture
-//   // is equivalent to `userStartAudio()`
-//   mySound.play();
-// }
