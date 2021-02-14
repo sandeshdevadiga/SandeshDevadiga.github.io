@@ -19,6 +19,12 @@ function setup() {
   let s = 'Hello There!! ';
   fill(1000);
   text(s, 10, 10, 70, 80);
+  let s = 'This is Sandesh, Welcome to my github ';
+  fill(1000);
+  text(s, 10, 10, 70, 80);
+  let s = 'This is Sandesh, Welcome to my github ';
+  fill(1000);
+  text(s, 10, 10, 70, 80);
 
   //createA('http://p5js.org/', 'this is a link');
 
