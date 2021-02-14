@@ -53,12 +53,12 @@ function randomChord() {
   //let angle1 = random(0, 2 * PI);
   
   
-  let xpos1 = (windowWidth)/4*3 + (windowHeight)/4  *cos(no_of_points);
+  let xpos1 = (windowWidth)/4*3-windowHeight + (windowHeight)/4  *cos(no_of_points);
   let ypos1 = (windowHeight)/2 + (windowHeight)/4 * sin(no_of_points);
 
   // find another random point on the circle
   let angle2 = 2*no_of_points;
-  let xpos2 = (windowWidth)/4*3 + (windowHeight)/4* cos(angle2);
+  let xpos2 = (windowWidth)/4*3-windowHeight + (windowHeight)/4* cos(angle2);
   let ypos2 = (windowHeight)/2 + (windowHeight)/4* sin(angle2);
 
   // draw a line between them
