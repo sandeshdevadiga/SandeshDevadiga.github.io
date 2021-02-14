@@ -3,30 +3,27 @@
 var no_of_points;
 var counter=0;
 let mySound;
-var windowWid;
-var windowhigh;
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
 function setup() {
-  windowhigh=windowHeight;
-  windowWid=windowWidth;
    
-  createCanvas(windowWid, windowhigh);
+  createCanvas(windowWidth, windowHeight);
   background(0, 0, 0);
   no_of_points=2*PI/300;  
   let s = 'Hello There!! ';
   fill(1000);
   text(s, 10, 10, 70, 80);
-  let s = 'This is Sandesh, Welcome to my github ';
+  let s1 = 'This is Sandesh, Welcome to my github ';
   fill(1000);
-  text(s, 10, 10, 70, 80);
-  let s = 'This is Sandesh, Welcome to my github ';
-  fill(1000);
-  text(s, 10, 10, 70, 80);
+  text(s1, 10, 50, 7000, 1000);
 
-  //createA('http://p5js.org/', 'this is a link');
+  link=createA('https://github.com/sandeshdevadiga', 'Check my projects here');
+  //link.fill(1000);
+  link.position(10,70,7000,1000);
+  
 
   //mySound = loadSound('../Soundfiles/sb_sanctum.mp3');
   //
