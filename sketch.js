@@ -7,6 +7,7 @@ let song;
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   background(0, 0, 0);
+  textSize(16);
   let s = 'Hello There!! ';
   fill(1000);
   text(s, 10, 10, 700, 800);
@@ -41,6 +42,7 @@ function setup() {
   cnv.mousePressed(canvasPressed);
   background(0, 0, 0);
   no_of_points = 2 * PI / 300;
+  textSize(16);
   let s = 'Hello There!! ';
   fill(1000);
   text(s, 10, 10, 700, 800);
