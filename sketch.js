@@ -12,7 +12,7 @@ function windowResized() {
 
 function preload() {
   soundFormats('mp3');
-  song = loadSound('sb_sanctum');
+  song = loadSound('maxkomusic-nature');
 
 }
 
