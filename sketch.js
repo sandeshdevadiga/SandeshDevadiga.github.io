@@ -3,8 +3,17 @@
 var no_of_points;
 var counter=0;
 let mySound;
+var windowWid;
+var windowhigh;
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  windowhigh=windowHeight;
+  windowWid=windowWidth;
+   
+  createCanvas(windowWid, windowhigh);
   background(0, 0, 0);
   no_of_points=2*PI/300;  
   let s = 'Hello There!! ';
