@@ -46,7 +46,7 @@ function setup() {
   let s = 'Hello There!! ';
   fill(1000);
   text(s, 10, 10, 700, 800);
-  let s1 = 'This is Sandesh, Welcome to my github ';
+  let s1 = 'This is Sandesh, Welcome to my github account ';
   fill(1000);
   text(s1, 10, 50, 7000, 1000);
   let s2 = 'I am C++ Developer, Working for Car Infotainment Systems at RBEI';
