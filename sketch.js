@@ -1,10 +1,11 @@
 
 var no_of_points;
 var counter = 0;
+let cnv;
 //let mySound;
 let song;
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  cnv.resizeCanvas(windowWidth, windowHeight);
   background(0, 0, 0);
   textSize(16);
   let s = 'Hello There!! ';
@@ -34,31 +35,34 @@ function preload() {
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
-  let cnv = createCanvas(windowWidth, windowHeight);
+  cnv = createCanvas(windowWidth, windowHeight);
+  cnv.position(0,0);
+  cnv.style('z-index','-1');
   cnv.mousePressed(canvasPressed);
+  //background(175);
   background(0, 0, 0);
   no_of_points = 2 * PI / 300;
-  textSize(16);
-  let s = 'Hello There!! ';
-  fill(1000);
-  text(s, 10, 10, 700, 800);
-  let s1 = 'This is Sandesh, Welcome to my github account ';
-  fill(1000);
-  text(s1, 10, 50, 7000, 1000);
-  let s2 = 'I am C++ Developer, Working for Car Infotainment Systems at RBEI';
-  fill(1000);
-  text(s2, 10, 70, 7000, 1000);
-  let s3 = 'I am just getting started here!. I look forward to some amazing collaberations ';
-  fill(1000);
-  text(s3, 10, 90, 7000, 1000);
-  let s4 = 'Have a great day';
-  fill(1000);
-  text(s4, 10, 110, 7000, 1000);
-  link = createA('https://github.com/sandeshdevadiga', 'Check my projects here');
-  //link want to set color and change text size, Can I do it?
-  link.position(10, 130, 7000, 1000);
-  link1 = createA('https://www.linkedin.com/in/sandeshdevadiga/', 'Connect');
-  link1.position(10, 150, 7000, 1000);
+  // textSize(16);
+  // let s = 'Hello There!! ';
+  // fill(1000);
+  // text(s, 10, 10, 700, 800);
+  // let s1 = 'This is Sandesh, Welcome to my github account ';
+  // fill(1000);
+  // text(s1, 10, 50, 7000, 1000);
+  // let s2 = 'I am C++ Developer, Working for Car Infotainment Systems at RBEI';
+  // fill(1000);
+  // text(s2, 10, 70, 7000, 1000);
+  // let s3 = 'I am just getting started here!. I look forward to some amazing collaberations ';
+  // fill(1000);
+  // text(s3, 10, 90, 7000, 1000);
+  // let s4 = 'Have a great day';
+  // fill(1000);
+  // text(s4, 10, 110, 7000, 1000);
+  // link = createA('https://github.com/sandeshdevadiga', 'Check my projects here');
+  // //link want to set color and change text size, Can I do it?
+  // link.position(10, 130, 7000, 1000);
+  // link1 = createA('https://www.linkedin.com/in/sandeshdevadiga/', 'Connect');
+  // link1.position(10, 150, 7000, 1000);
   frameRate(4);
   stroke(0, 0, 0, 1005);
 }
