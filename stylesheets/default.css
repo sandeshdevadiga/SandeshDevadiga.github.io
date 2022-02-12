@@ -5,7 +5,7 @@
 	--borderColor:#c1c1c1;
 
 	--mainText:black;
-	--secondaryText:#4b5156;
+	--secondaryText:#b5bdc4;
 
 	--themeDotBorder:#24292e;
 
@@ -49,7 +49,7 @@ h3 { font-size: 28px;}
 h4 { font-size: 24px;}
 h5 { font-size: 20px;}
 h6 { font-size: 16px;}
-
+p{text-shadow: 49px -4px 46px rgba(233,218,218,0.62);}
 
 .social-media
 {
